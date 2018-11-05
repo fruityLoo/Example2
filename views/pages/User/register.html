@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<header>
+		<% include ../../../views/partials/head.html %>
+	</header>
+	
+	
+	<body>
+		<header>
+			<% include ../../../views/partials/header.html %>
+		</header>
+		
+		<main class="container">
+			<form id="registry-form" method="POST" action="/user/register">
+				<div class="form-row">
+					<div class="col-xs-4">
+						<label>Nombre(s)</label>
+						<input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre(s)" />
+					</div>
+					<div class="col-xs-4">
+						<label>Ap. Paterno</label>
+						<input type="text" name="paterno" id="paterno" class="form-control" placeholder="Apellido Paterno" />
+					</div>
+					<div class="col-xs-4">
+						<label>Ap. Materno</label>
+						<input type="text" name="materno" id="materno" class="form-control" placeholder="Apellido Materno" />
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-xs-2">
+						<label>Telefono</label>
+						<input type="text" name="telefono" id="telefono" class="form-control" placeholder="Telefono" />
+					</div>
+					<div class="col-xs-4">
+						<label>Correo</label>
+						<input type="text" name="correo" id="correo" class="form-control" placeholder="Correo" />
+					</div>
+					<div class="col-xs-3">
+						<label>Nivel Acceso</label>
+						<input type="text" name="nivAcceso" id="nivAcceso" class="form-control" placeholder="Acceso" />
+					</div>
+					<div class="col-xs-3">
+						<label>Playeras Extra</label>
+						<input type="text" name="extras" id="extras" class="form-control" placeholder="Extras" />
+					</div>
+				</div>
+				<div class="form-row">
+					<button class="btn btn-success btn-block" type="submit">Registrar</button>
+				</div>
+			</form>
+		</main>
+		
+		<footer>
+			<% include ../../../views/partials/footer.html %>
+		</footer>
+	</body>
+</html>

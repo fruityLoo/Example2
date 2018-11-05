@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<header>
+		<% include ../../../views/partials/head.html %>
+	</header>
+	
+	
+	<body>
+		<header>
+			<% include ../../../views/partials/header.html %>
+		</header>
+		
+		<main class="container">
+			<h3><%= title%></h3>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Folio</th>
+						<th>Nombre</th>
+						<th>Ap.Paterno</th>
+						<th>Ap.Materno</th>
+						<th>Correo</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% data.forEach(item => { %>
+						<tr>
+							<td><%= item.id%></td>
+							<td><%= item.nombre%></td>
+							<td><%= item.apePat%></td>
+							<td><%= item.apeMat%></td>
+							<td><%= item.correo%></td>
+						</tr>
+					<% }); %>
+				</tbody>
+			</table>
+			<div><button class="btn btn-default pull-right">Registrar</button></div>
+		</main>
+		
+		<footer>
+			<% include ../../../views/partials/footer.html %>
+		</footer>
+	</body>
+</html>
